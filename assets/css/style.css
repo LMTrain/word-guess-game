@@ -1,0 +1,72 @@
+/* body {
+    background-image: url("../images/background.png");
+    color: white;        
+} */
+
+.background {
+    background-image: url("../images/background.png");
+    color: white;        
+}
+.content-r3{
+        border: 4px dotted white;
+        /* background: black; */
+        text-align:center;
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+        margin:5px;
+        height: 380px;
+        margin-top: 50px;
+    }
+
+    .mid-content-r3-c2{
+        border: 4px dotted white;
+        text-align:center;
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+        margin:5px;
+        height: 260px;
+        margin-top: 170px;
+    }
+
+    .contents-r1-c1 {
+        border: 4px dotted white;
+        background: black;
+        font-family: 'Bodoni MT Black';
+        text-align:center;
+        margin:5px;
+    }
+
+    .contents-r4-c1 {
+        border: 4px dotted white;
+        background: black;
+        font-family: 'Arial Narrow';
+        text-align:center;
+        margin:5px;
+    }
+
+    .contents-r2-c1 {
+        /* border: 4px dotted white; */
+        /* background: black; */
+        text-align:center;
+        margin:5px;
+        height: 260px;
+        margin-top: 200px;
+    }
+
+    .contents-r2-c2 {
+        /* border: 4px dotted white;
+        background: black;
+        text-align:center; */
+        margin:5px;
+        height: 180px;
+        margin-top: 50px;
+    }
+
+    .contents-r2-c3 {
+        /* border: 4px dotted white; */
+        /* background: black; */
+        text-align:center;
+        margin:5px;
+        height: 260px;
+        margin-top: 20px;
+    }
