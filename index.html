@@ -23,6 +23,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="contents-r2-c2">
+                        <!-- <P>Computer Guess Artist is:<br></P>
+                        <p id= "computer-guess-block"><br></p> -->
+                        <!-- <p onmouseover="style.color='red'" onmouseout="style.color='white'">Click Button To Start Game<input type="text" size="25" id="user-text"></p> -->
+                        <button onclick="startFunction()">Click Button To Start Game</button>
                         
                     </div>
                 </div>
@@ -34,23 +38,27 @@
             </div>
             
             <div class="row">
-                <div class="col-md-4.5">
+                <div class="col-md-4">
                     <div class="content-r3">
-                        <!-- <button type="button"
-                        onclick="document.getElementById('column2text').innerHTML = userText">
-                        Click Button to get started!</button> -->
-                    
-                        <!-- <p>Type in Artist Name: <br><input type="text" id="user-text" onfocus="myFunction(this)" onblur="myFunction()"></p> -->
-                        <p onmouseover="style.color='red'" onmouseout="style.color='white'">Type in Artist Name and click Submit:<br><input type="text" size="25" id="user-text"></p>
-                        <button onclick="document.getElementById('user-text').value = ''" onclick="console.log(userInput[0])">Submit</button>
+                        <P id= "artist-is"><br></P>
+                        <p id= "computer-guess-block"><br></p>
+                        <p onmouseover="style.color='red'" onmouseout="style.color='yellow'" id= "user-text-input"><br></p>
+                        <p onmouseover="style.color='red'" onmouseout="style.color='white'"><input type="text" size="25" id="user-text"></p>
+                        <p id= "submit-button"></p>
+                        <!-- <button type="button" onclick="document.getElementById('submit-button').style.display='none'"></button> -->
+                        <button onclick="myFunction()">Submit</button>
                         
-                        <!-- <form onsubmit="confirmInput()" action="myFunction()">
-                            <input type="submit">
-                        </form> -->
+                        
+                        
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="mid-content-r3-c2" id="computer-guess"><p> Computer Guess is:<br></p>
+                <div class="col-md-4">
+                    <div class="mid-content-r3-c2">
+                        <p> Computer Guess is:<br></p>
+                        <p id="computer-guess"><br></p>
+                        <p><br>Your Guess is:<br></p>
+                        <p id="user-input"><br></p>
+                        
                         
                     </div>
                 </div>
@@ -59,7 +67,7 @@
                         <p id="total-wins"><br></p>
                         <p id="total-losses"><br></p>
                         <p id="total-guesses"><br></p>
-                        <p id="column3text"></p>
+                        
                     </div>
                 </div>
             </div>
