@@ -18,6 +18,21 @@
         margin-top: 50px;
     }
 
+    #artist-is{
+        text-align:center;
+        font-size: 24px;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+    }
+
+    #computer-guess-block{
+        /* text-align:center; */
+        font-size: 24px;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
+        margin-left: 10px;
+    }
+
     .mid-content-r3-c2{
         border: 4px dotted white;
         text-align:center;

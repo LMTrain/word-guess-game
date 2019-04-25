@@ -13,7 +13,7 @@
         <div class="container background">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="contents-r1-c1"><h1>Word Guess Game</h1></div>               
+                    <div class="contents-r1-c1"><h1>Word Guess Game - 90's R&B Artist</h1></div>               
                 </div>
             </div>
             <div class="row">
@@ -41,12 +41,14 @@
                 <div class="col-md-4">
                     <div class="content-r3">
                         <P id= "artist-is"><br></P>
-                        <p id= "computer-guess-block"><br></p>
+                            <div style="width: 55px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                <p id= "computer-guess-block"><br></p>
+                            </div>
                         <p onmouseover="style.color='red'" onmouseout="style.color='yellow'" id= "user-text-input"><br></p>
                         <p onmouseover="style.color='red'" onmouseout="style.color='white'"><input type="text" size="25" id="user-text"></p>
-                        <p id= "submit-button"></p>
+                        <!-- <p id= "submit-button"></p> -->
                         <!-- <button type="button" onclick="document.getElementById('submit-button').style.display='none'"></button> -->
-                        <button onclick="myFunction()">Submit</button>
+                        <button onclick="myFunction()"><p id= "submit-button"></p></button>
                         
                         
                         
