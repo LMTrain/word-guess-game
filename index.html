@@ -1,103 +1,79 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
 
-<body>
-
-    <div class="container background">
-       <div class="row">
-           <div class="col-md-12">
-               <div class="contents-r1-c1"><h1>Word Guess Game</h1></div>               
-           </div>
-       </div>
-       <div class="row">
-            <div class="col-md-4">
+    <body>
+        
+        <div class="container background">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contents-r1-c1"><h1>Word Guess Game</h1></div>               
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
                     <div class="contents-r2-c1"><img src="assets/images/2R_n_B.jpg">
                     </div>
                 </div>
-                    <div class="col-md-4">
+                <div class="col-md-4">
                     <div class="contents-r2-c2">
                         
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contents-r2-c3"><img src="assets/images/3R_n_B.jpg">
-                            
+                        
                     </div>
                 </div>
-        </div>
-
-       <div class="row">
-            <div class="col-md-4">
-                <div class="content-r3"><button type="button"
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4.5">
+                    <div class="content-r3">
+                        <!-- <button type="button"
                         onclick="document.getElementById('column2text').innerHTML = userText">
-                        Click Button to get started!</button>
-                        <!-- <p id="user-text"></p> -->
-                        <p>Type in Artist Name: <br><span id="user-text"><strong>________  </strong></span></p>
+                        Click Button to get started!</button> -->
                     
+                        <!-- <p>Type in Artist Name: <br><input type="text" id="user-text" onfocus="myFunction(this)" onblur="myFunction()"></p> -->
+                        <p onmouseover="style.color='red'" onmouseout="style.color='white'">Type in Artist Name and click Submit:<br><input type="text" size="25" id="user-text"></p>
+                        <button onclick="document.getElementById('user-text').value = ''" onclick="console.log(userInput[0])">Submit</button>
+                        
+                        <!-- <form onsubmit="confirmInput()" action="myFunction()">
+                            <input type="submit">
+                        </form> -->
+                    </div>
                 </div>
-            </div>
+                <div class="col-md-3">
+                    <div class="mid-content-r3-c2" id="computer-guess"><p> Computer Guess is:<br></p>
+                        
+                    </div>
+                </div>
                 <div class="col-md-4">
-                <div class="mid-content-r3-c2"><p> Computer Guess is:<br></p>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="content-r3">
+                    <div class="content-r3">
                         <p id="total-wins"><br></p>
                         <p id="total-losses"><br></p>
                         <p id="total-guesses"><br></p>
                         <p id="column3text"></p>
+                    </div>
                 </div>
             </div>
-       </div>
-       
-       <div class="row">
-           <div class="col-md-12">
-                <div class="contents-r4-c1">
-                    <p>Copyright(c)</p>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contents-r4-c1">
+                        <p>Copyright(c)</p>
+                    </div>
                 </div>
-           </div>
-       </div>
-       <script type="text/javascript">
-
-        var userText = document.getElementById("user-text");        
-        var computerChoices = ["Soul For Real", "Michael Jackson", "Faith Evans", "702", "Shai", "K-Ci & Jojo", "R. Kelly", "Destiny Child", "Fugees", "Silk", "Color me Badd", "Shanice", "Lisa Stansfield", "Tony Toni Tone", "Jade", "Keith Sweat", "Aaron Hall", "Johnny Gill", "Jodeci", "Brandy", "Monica", "Usher", "SWV", "Mary J Blige", "Montell Jordan", "Blackstreet", "Dr Dre", "Snoop Dogg", "xscape", "Puff Daddy", "Mint Condition", "Jagged Edge", "Jennifer Lopez", "Heavy D", "Guy", "Tupac", "Jay Z", "Next", "Beyonce", "112", "En Vogue", "Sade", "Dru Hill", "Lauryn Hill", "Whitney Houston", "Boyz II Men", "Santana", "Luther Vandross", "Mark Morrison", "Joe", "Babyface", "Tina Turner", "Tevin Cambell", "Tyrese"];
-        var wins = 0;
-        var losses = 0;
-        var guesses = 5;
-        
-        document.onkeyup = function(event) {
-            userText.textContent = event.key;
-        };
-        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-        document.getElementById("total-wins").textContent = "Wins = " + wins;
-        document.getElementById("total-losses").textContent = " Loses = " + losses;
-        document.getElementById("total-guesses").textContent = " Guesses = " + guesses;
-        document.getElementById("column3text").innerHTML = computerGuess;
-
-        // alert(computerChoices.length);
-        // var wins = 0;
-        // var losses = 0;
-        // var ties = 0;
-        // // This function is run whenever the user presses a key.
-        // document.onkeyup = function(event) {
-        // // Determines which key was pressed.
-        // var userGuess = event.key;
-        // if(!(userGuess==="p"||userGuess==="r"||userGuess==="s")){
-        //     return;
-        // }
-
-        // // Randomly chooses a choice from the options array. This is the Computer's guess.
-        // var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
-       </script>
+            </div>
+            
+            <script src="assets/javascript/game.js"></script>
+        </div>
     </body>
-
+    
 </html>
