@@ -24,6 +24,11 @@ function startFunction() {
   document.getElementById("total-losses").textContent = " Loses = " + losses;
   document.getElementById("total-guesses").textContent = " Guesses = " + guesses;
   userInputN = userInputN - 1;
+  // $('#user-text').keyup(function(key){
+  //   if(key.keyCode == 13){
+  //       check
+  //   }
+
   // document.getElementById("submit-button").innerHTML =<button onclick="myFunction()">Submit</button>;
   // <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
 };
@@ -32,6 +37,10 @@ function myFunction() {
   document.getElementById("total-guesses").textContent = " Guesses = " + guesses;
   document.getElementById("computer-guess").innerHTML = computerGuess;
   var userText = document.getElementById("user-text").value;
+    // $('#user-text').keyup(function(key){
+    //   if(key.keyCode == 13){
+    //       check
+    //   }
   var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
   document.getElementById("computer-guess-block").innerHTML = computerGuess;
   computerGuessR.push(computerGuess);
@@ -69,6 +78,12 @@ function gameOver() {
   document.getElementById("user-text-input").innerHTML = "GAME OVER!!!!!";
   document.getElementById("user-text").innerHTML = "GAME OVER!!!!!";
   document.getElementById("submit-button").innerHTML = "GAME OVER Click to Restart";
+  document.getElementById("submit-button").innerHTML = "GAME OVER Click to Restart";
+  $('#submit-button').click(
+    function(){
+      location.reload(true);
+    }
+  )
   // <button onclick=location.reload(true) </button>;
 
 };
