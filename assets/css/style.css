@@ -14,7 +14,7 @@
         font-size: 24px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
         margin:5px;
-        height: 300px;
+        height: 330px;
         margin-top: 50px;
     }
 
@@ -36,12 +36,12 @@
     .mid-content-r3-c2{
         border: 4px dotted white;
         text-align:center;
-        font-size: 18px;
+        font-size: 24px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
         margin:5px;
         height: 260px;
-        margin-top: 90px;
-        /* margin-right: 10px; */
+        margin-top: 120px;
+        
     }
 
     .contents-r1-c1 {
@@ -69,12 +69,22 @@
         margin-top: 200px;
     }
 
+    #start-button {
+        font-size: 40px bold;
+        font-family: 'Bodoni MT Black';
+        color: green;
+
+    }
+    
+    #submit-button {
+        font-size: 30px bold;
+        font-family: 'Bodoni MT Black';
+        color: green;
+    }
     .contents-r2-c2 {
-        font-size: 24px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif bold;
         margin:5px;
         height: 10px;
-        margin-top: 620px;
+        margin-top: 580px;
     }
 
     .contents-r2-c3 {
